@@ -16,17 +16,19 @@ nav ul {
 }
 .resume-section1 {
   padding: 40px 20px;
-  background-color: #E8ECEF;
-  h1{
-      font-size: 3rem;
-      margin: .625rem 0;
+  background-color: #e8ecef;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  h1 {
+    font-size: 3rem;
+    margin: 0.625rem 0;
   }
-  p{
-      font-size: 1.2rem;
+  p {
+    font-size: 1.2rem;
   }
-  hr{
-      background: #E8ECEF;
-      margin: 1rem 0;
+  hr {
+    background: #e8ecef;
+    margin: 1rem 0;
   }
   .profile-pic {
     width: 40%;
@@ -35,10 +37,77 @@ nav ul {
       border-radius: 5px;
     }
   }
-  button{
-      padding: 10px;
-      border-radius: 5px;
-      background: #808080;
-      margin: 1rem 0;
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    background: #808080;
+    margin: 1rem 0;
+    font-size: 1.3rem;
   }
+}
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  div {
+    width: 48%;
+  }
+  p {
+    line-height: 1.5;
+  }
+  div:nth-child(2) {
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: separate;
+      width: 100%;
+      border: solid #dddddd 1px;
+      border-radius: 6px;
+    }
+
+    td {
+      border-bottom: solid #dddddd 1px;
+      text-align: left;
+      padding: 10px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    table tr:nth-of-type(5) td {
+      border-bottom: none;
+    }
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+  }
+}
+.section3 {
+  h1 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border-top: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+}
+footer {
+  text-align: center;
+  padding: 1.8rem 0;
+  margin: 2rem 0 1rem 0;
+  background: #808080;
 }

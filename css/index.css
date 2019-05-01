@@ -147,7 +147,9 @@ nav ul li {
 }
 .resume-section1 {
   padding: 40px 20px;
-  background-color: #E8ECEF;
+  background-color: #e8ecef;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 .resume-section1 h1 {
   font-size: 3rem;
@@ -157,7 +159,7 @@ nav ul li {
   font-size: 1.2rem;
 }
 .resume-section1 hr {
-  background: #E8ECEF;
+  background: #e8ecef;
   margin: 1rem 0;
 }
 .resume-section1 .profile-pic {
@@ -172,4 +174,62 @@ nav ul li {
   border-radius: 5px;
   background: #808080;
   margin: 1rem 0;
+  font-size: 1.3rem;
+}
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section2 div {
+  width: 48%;
+}
+.section2 p {
+  line-height: 1.5;
+}
+.section2 div:nth-child(2) table {
+  font-family: arial, sans-serif;
+  border-collapse: separate;
+  width: 100%;
+  border: solid #dddddd 1px;
+  border-radius: 6px;
+}
+.section2 div:nth-child(2) td {
+  border-bottom: solid #dddddd 1px;
+  text-align: left;
+  padding: 10px;
+}
+.section2 div:nth-child(2) tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.section2 div:nth-child(2) table tr:nth-of-type(5) td {
+  border-bottom: none;
+}
+.section2 h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.section3 h1 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+.section3 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.section3 td,
+.section3 th {
+  border-top: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+.section3 tr:nth-child(even) {
+  background-color: #dddddd;
+}
+footer {
+  text-align: center;
+  padding: 1.8rem 0;
+  margin: 2rem 0 1rem 0;
+  background: #808080;
 }
