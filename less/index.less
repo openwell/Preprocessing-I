@@ -1,22 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto");
 @import "reset.less";
 
-@black: black;
+@background: #e8ecef;
+@ligthGrey: #dddddd;
+
+.border_table() {
+  border-bottom: solid @ligthGrey 1px;
+  text-align: left;
+  padding: 10px;
+}
 
 body {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 5px;
+  font-family: Roboto, Raleway, Lato, sans-serif;
 }
 nav ul {
   display: flex;
   justify-content: flex-end;
 
   li {
-    padding: 20px;
+    padding: 1rem;
+
+    &:hover {
+      background: @ligthGrey;
+      margin-left: 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   }
 }
 .resume-section1 {
   padding: 40px 20px;
-  background-color: #e8ecef;
+  background-color: @background;
   border-radius: 5px;
   margin-bottom: 1rem;
   h1 {
@@ -27,22 +44,38 @@ nav ul {
     font-size: 1.2rem;
   }
   hr {
-    background: #e8ecef;
+    background: @background;
     margin: 1rem 0;
   }
   .profile-pic {
     width: 40%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+
     img {
       width: 100%;
       border-radius: 5px;
     }
+  }
+  a:link {
+    text-decoration: none;
   }
   button {
     padding: 10px;
     border-radius: 5px;
     background: #808080;
     margin: 1rem 0;
+    cursor: pointer;
     font-size: 1.3rem;
+    &:hover {
+      background: @ligthGrey;
+      cursor: pointer;
+    }
+  }
+
+  small {
+    color: #4e78c7;
   }
 }
 
@@ -50,29 +83,32 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
   div {
     width: 48%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
   p {
     line-height: 1.5;
   }
   div:nth-child(2) {
     table {
-      font-family: arial, sans-serif;
       border-collapse: separate;
       width: 100%;
-      border: solid #dddddd 1px;
+      border: solid @ligthGrey 1px;
       border-radius: 6px;
     }
 
     td {
-      border-bottom: solid #dddddd 1px;
-      text-align: left;
-      padding: 10px;
+      .border_table();
     }
 
     tr:nth-child(even) {
-      background-color: #dddddd;
+      background-color: @ligthGrey;
     }
     table tr:nth-of-type(5) td {
       border-bottom: none;
@@ -80,7 +116,7 @@ nav ul {
   }
   h1 {
     font-size: 1.5rem;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
   }
 }
 .section3 {
@@ -89,20 +125,17 @@ nav ul {
     font-size: 1.5rem;
   }
   table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
 
   td,
   th {
-    border-top: 1px solid #dddddd;
-    text-align: left;
-    padding: 10px;
+    .border_table();
   }
 
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: @ligthGrey;
   }
 }
 footer {

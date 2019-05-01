@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,13 +155,21 @@ body {
 body {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 5px;
+  font-family: Roboto, Raleway, Lato, sans-serif;
 }
 nav ul {
   display: flex;
   justify-content: flex-end;
 }
 nav ul li {
-  padding: 20px;
+  padding: 1rem;
+}
+nav ul li:hover {
+  background: #dddddd;
+  margin-left: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .resume-section1 {
   padding: 40px 20px;
@@ -165,30 +191,55 @@ nav ul li {
 .resume-section1 .profile-pic {
   width: 40%;
 }
+@media (max-width: 500px) {
+  .resume-section1 .profile-pic {
+    width: 100%;
+  }
+}
 .resume-section1 .profile-pic img {
   width: 100%;
   border-radius: 5px;
+}
+.resume-section1 a:link {
+  text-decoration: none;
 }
 .resume-section1 button {
   padding: 10px;
   border-radius: 5px;
   background: #808080;
   margin: 1rem 0;
+  cursor: pointer;
   font-size: 1.3rem;
+}
+.resume-section1 button:hover {
+  background: #dddddd;
+  cursor: pointer;
+}
+.resume-section1 small {
+  color: #4e78c7;
 }
 .section2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .section2 {
+    flex-direction: column;
+  }
+}
 .section2 div {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .section2 div {
+    width: 100%;
+  }
 }
 .section2 p {
   line-height: 1.5;
 }
 .section2 div:nth-child(2) table {
-  font-family: arial, sans-serif;
   border-collapse: separate;
   width: 100%;
   border: solid #dddddd 1px;
@@ -214,13 +265,12 @@ nav ul li {
   font-size: 1.5rem;
 }
 .section3 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 .section3 td,
 .section3 th {
-  border-top: 1px solid #dddddd;
+  border-bottom: solid #dddddd 1px;
   text-align: left;
   padding: 10px;
 }
