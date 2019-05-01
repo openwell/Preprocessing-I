@@ -1,3 +1,44 @@
-@import 'reset.less';
+@import "reset.less";
 
 @black: black;
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    padding: 20px;
+  }
+}
+.resume-section1 {
+  padding: 40px 20px;
+  background-color: #E8ECEF;
+  h1{
+      font-size: 3rem;
+      margin: .625rem 0;
+  }
+  p{
+      font-size: 1.2rem;
+  }
+  hr{
+      background: #E8ECEF;
+      margin: 1rem 0;
+  }
+  .profile-pic {
+    width: 40%;
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  button{
+      padding: 10px;
+      border-radius: 5px;
+      background: #808080;
+      margin: 1rem 0;
+  }
+}

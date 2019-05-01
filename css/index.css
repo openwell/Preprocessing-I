@@ -134,3 +134,42 @@ html,
 body {
   height: 100%;
 }
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul li {
+  padding: 20px;
+}
+.resume-section1 {
+  padding: 40px 20px;
+  background-color: #E8ECEF;
+}
+.resume-section1 h1 {
+  font-size: 3rem;
+  margin: 0.625rem 0;
+}
+.resume-section1 p {
+  font-size: 1.2rem;
+}
+.resume-section1 hr {
+  background: #E8ECEF;
+  margin: 1rem 0;
+}
+.resume-section1 .profile-pic {
+  width: 40%;
+}
+.resume-section1 .profile-pic img {
+  width: 100%;
+  border-radius: 5px;
+}
+.resume-section1 button {
+  padding: 10px;
+  border-radius: 5px;
+  background: #808080;
+  margin: 1rem 0;
+}
