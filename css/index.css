@@ -1,1 +1,285 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5px;
+  font-family: Roboto, Raleway, Lato, sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul li {
+  padding: 1rem;
+}
+nav ul li:hover {
+  background: #dddddd;
+  margin-left: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.resume-section1 {
+  padding: 40px 20px;
+  background-color: #e8ecef;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.resume-section1 h1 {
+  font-size: 3rem;
+  margin: 0.625rem 0;
+}
+.resume-section1 p {
+  font-size: 1.2rem;
+}
+.resume-section1 hr {
+  background: #e8ecef;
+  margin: 1rem 0;
+}
+.resume-section1 .profile-pic {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .resume-section1 .profile-pic {
+    width: 100%;
+  }
+}
+.resume-section1 .profile-pic img {
+  width: 100%;
+  border-radius: 5px;
+}
+.resume-section1 a:link {
+  text-decoration: none;
+}
+.resume-section1 button {
+  padding: 10px;
+  border-radius: 5px;
+  background: #808080;
+  margin: 1rem 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.resume-section1 button:hover {
+  background: #dddddd;
+  cursor: pointer;
+}
+.resume-section1 small {
+  color: #4e78c7;
+}
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .section2 {
+    flex-direction: column;
+  }
+}
+.section2 div {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .section2 div {
+    width: 100%;
+  }
+}
+.section2 p {
+  line-height: 1.5;
+}
+.section2 div:nth-child(2) table {
+  border-collapse: separate;
+  width: 100%;
+  border: solid #dddddd 1px;
+  border-radius: 6px;
+}
+.section2 div:nth-child(2) td {
+  border-bottom: solid #dddddd 1px;
+  text-align: left;
+  padding: 10px;
+}
+.section2 div:nth-child(2) tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.section2 div:nth-child(2) table tr:nth-of-type(5) td {
+  border-bottom: none;
+}
+.section2 h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.section3 h1 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+.section3 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.section3 td,
+.section3 th {
+  border-bottom: solid #dddddd 1px;
+  text-align: left;
+  padding: 10px;
+}
+.section3 tr:nth-child(even) {
+  background-color: #dddddd;
+}
+footer {
+  text-align: center;
+  padding: 1.8rem 0;
+  margin: 2rem 0 1rem 0;
+  background: #808080;
+}
